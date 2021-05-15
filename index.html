@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Mutiple of Test</title>
+</head>
+<body>
+    <button onclick="countNow()" >Click Here to Start</button>
+    <script>
+        function countNow() {
+            for (var x=1; x <= 100; x++) {
+                var hideNum = 0; //initialize a variable for hiding and showing the number
+                if (x % 3 == 0) {  // check to see if variable is a multiple of 3
+                    document.write('Fizz'); // write Frizz if true
+                    hideNum = 1; // set variable to hide number
+                }
+                if (x % 5 == 0) { // check to see if variable is a multiple of 5
+                    document.write('Buzz'); // write Buzz if true
+                    hideNum = 1; // set variable to hide number
+                }
+                if (hideNum == 0) { // check if hideNum is false 
+                    document.write(x); // write the var number
+                }
+                document.write('<br>'); // to add line breaks
+            }
+        }
+    </script>
+</body>
+</html>
